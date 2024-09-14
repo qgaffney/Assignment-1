@@ -5,11 +5,11 @@ import os
 import csv
 
 #Set path for source file
-CSV_ELECT = os.path.join ('python-challenge', 'PyPoll', 'Resources', 'election_data.csv')
+CSV_PATH = os.path.join ('Resources', 'election_data.csv')
 
 #Open and read CSV
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
-with open(CSV_ELECT) as csvfile:
+with open(CSV_PATH) as csvfile:
 
 #Specify delimiter and CSV reader
     csvreader = csv.reader(csvfile, delimiter=",")
